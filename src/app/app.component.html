@@ -9,8 +9,8 @@
 <!-- this is my first checkbox -->
 <div *ngIf="showDetails.checked">Some details....</div> --> -->
 
-<mat-radio-group>
-    <mat-radio-button value="1">Ben</mat-radio-button>
+<mat-radio-group value="2">
+    <mat-radio-button value="0">Ben</mat-radio-button>
     <mat-radio-button value="2">Laura</mat-radio-button>
   </mat-radio-group>
 
@@ -25,4 +25,10 @@
     <mat-radio-button value="5">Alexia</mat-radio-button>
   </mat-radio-group>
   
+
+<select>
+  <option
+    *ngFor="let color of colors"
+    [value]="color.id"{{color.name}}></option>
+</select>
 </div>
