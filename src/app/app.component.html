@@ -1,2 +1,28 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<md-checkbox>Subscribe to newsletter</md-checkbox>
+
+<div>
+<mat-checkbox
+  #showDetails 
+  [value]=""
+  [checked]="isChecked"
+  (change)="onChange($event)"
+  >If you click here you will see</mat-checkbox>
+<!-- this is my first checkbox -->
+<div *ngIf="showDetails.checked">Some details....</div> --> -->
+
+<mat-radio-group>
+    <mat-radio-button value="1">Ben</mat-radio-button>
+    <mat-radio-button value="2">Laura</mat-radio-button>
+  </mat-radio-group>
+
+<!-- to add multiple buttons 
+  mat-radio-group>mat-radio-button*4-->
+
+  <mat-radio-group>
+    <mat-radio-button value="1">Cameron</mat-radio-button>
+    <mat-radio-button value="2">Sawyer</mat-radio-button>
+    <mat-radio-button value="3">Kylie</mat-radio-button>
+    <mat-radio-button value="4">Grayson</mat-radio-button>
+    <mat-radio-button value="5">Alexia</mat-radio-button>
+  </mat-radio-group>
+  
+</div>
