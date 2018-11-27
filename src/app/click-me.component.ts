@@ -14,7 +14,7 @@ export class ClickMeComponent {
   clickMessage = '';
 
   onClickMe() {
-    this.clickMessage = 'You are my hero!';
+    this.clickMessage = 'Congrats, you can click!';
   }
 }
 
