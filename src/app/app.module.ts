@@ -18,10 +18,21 @@ import {
 } from './keyup.components';
 import { LittleTourComponent } from './little-tour.component';
 import { LoopbackComponent } from './loop-back.component';
+import {MatSelectModule} from '@angular/material/select';
+import {MatToolbarModule} from '@angular/material/toolbar';
 
 
 @NgModule({
  
+  imports: [
+    BrowserModule,
+    BrowserAnimationsModule,
+    AppRoutingModule, 
+    MatCheckboxModule,
+    MatRadioModule,
+    MatSelectModule
+   // MatToolbarModule,
+  ],
   declarations: [
     AppComponent,
     ClickMeComponent,
@@ -31,16 +42,11 @@ import { LoopbackComponent } from './loop-back.component';
     KeyUpComponent_v3,
     KeyUpComponent_v4,
     LittleTourComponent,
-    LoopbackComponent
+    LoopbackComponent,
+   // MatToolbarRow
+   // MatToolbar
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    MatCheckboxModule,
-    MatRadioModule,
-    MatSelectModule
-  ],
+ 
   providers: [
 
   ],

@@ -1,7 +1,15 @@
 
 <div>
     
-<mat-checkbox
+
+
+  <mat-checkbox
+  [value]=""
+  [checked]="isChecked"
+  (change)="onChange($event)"
+  >Subscribe to Newsletter</mat-checkbox>
+
+  <mat-checkbox
   #showDetails 
   [value]=""
   [checked]="isChecked"
